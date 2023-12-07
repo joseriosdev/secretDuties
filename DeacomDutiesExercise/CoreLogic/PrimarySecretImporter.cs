@@ -51,7 +51,13 @@ namespace DeacomDutiesExercise.CoreLogic
                             s.AlmostPalindrome
                             );
                     }
-                    bulkCopy.WriteToServer(table);
+                    try
+                    {
+                        bulkCopy.WriteToServer(table);
+                    } catch(Exception ex)
+                    {
+                        _log.AddError("Error while inserting to DB", ex);
+                    }
                 }
                 connection.Close();
             }

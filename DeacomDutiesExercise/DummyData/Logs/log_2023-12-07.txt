@@ -21,3 +21,88 @@
 [INFO] 2023-12-07_12:12:44 - Validating input, max attempts: 5 | validValuesIsNull False
 [INFO] 2023-12-07_12:12:03 - Validating input, max attempts: 5 | validValuesIsNull False
 [INFO] 2023-12-07_12:12:03 - Selected Exit program... Closing.
+[INFO] 2023-12-07_12:12:36 - ---------------------- Starting the program ----------------------
+[INFO] 2023-12-07_12:12:40 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_12:12:40 - Selected Import
+[INFO] 2023-12-07_12:12:43 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_12:12:07 - ---------------------- Starting the program ----------------------
+[INFO] 2023-12-07_12:12:10 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_12:12:10 - Selected Import
+[INFO] 2023-12-07_12:12:38 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_12:12:55 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_12:12:33 - ---------------------- Starting the program ----------------------
+[INFO] 2023-12-07_12:12:58 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_12:12:58 - Selected Exit program... Closing.
+[INFO] 2023-12-07_12:12:25 - ---------------------- Starting the program ----------------------
+[INFO] 2023-12-07_12:12:34 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_12:12:34 - Selected Import
+[INFO] 2023-12-07_12:12:43 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_12:12:56 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_12:12:56 - There is something wrong with the import path
+ Execption: Double check import path - System.NullReferenceException: Double check import path[INFO] 2023-12-07_12:12:11 - ---------------------- Starting the program ----------------------
+[INFO] 2023-12-07_12:12:15 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_12:12:15 - Selected Import
+[INFO] 2023-12-07_12:12:19 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_12:12:29 - Validating input, max attempts: 5 | validValuesIsNull True
+[INFO] 2023-12-07_12:12:39 - There is one attempt left for a valid input
+[INFO] 2023-12-07_12:12:41 - Error ocurred when importing file: C:\Users\User\Documents\WORK\aaa\DeacomDutiesExercise\DeacomDutiesExercise\DummyData\ToImport\2.csv
+ Execption: Could not find file 'C:\Users\User\Documents\WORK\aaa\DeacomDutiesExercise\DeacomDutiesExercise\DummyData\ToImport\2.csv'. - System.IO.FileNotFoundException: Could not find file 'C:\Users\User\Documents\WORK\aaa\DeacomDutiesExercise\DeacomDutiesExercise\DummyData\ToImport\2.csv'.
+File name: 'C:\Users\User\Documents\WORK\aaa\DeacomDutiesExercise\DeacomDutiesExercise\DummyData\ToImport\2.csv'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path)
+   at DeacomDutiesExercise.CoreLogic.CSVHandler`1.ReadCsvFile(String fileName) in C:\Users\User\Documents\WORK\aaa\DeacomDutiesExercise\DeacomDutiesExercise\CoreLogic\CSVHandler.cs:line 28[INFO] 2023-12-07_12:12:06 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_12:12:07 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_12:12:07 - Selected Exit program... Closing.
+[INFO] 2023-12-07_13:12:20 - ---------------------- Starting the program ----------------------
+[INFO] 2023-12-07_13:12:26 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_13:12:26 - Selected Import
+[INFO] 2023-12-07_13:12:34 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_13:12:37 - Validating input, max attempts: 5 | validValuesIsNull True
+[INFO] 2023-12-07_13:12:37 - Error ocurred when importing file: C:\Users\User\Documents\WORK\aaa\DeacomDutiesExercise\DeacomDutiesExercise\DummyData\ToImport\.csv
+ Execption: Could not find file 'C:\Users\User\Documents\WORK\aaa\DeacomDutiesExercise\DeacomDutiesExercise\DummyData\ToImport\.csv'. - System.IO.FileNotFoundException: Could not find file 'C:\Users\User\Documents\WORK\aaa\DeacomDutiesExercise\DeacomDutiesExercise\DummyData\ToImport\.csv'.
+File name: 'C:\Users\User\Documents\WORK\aaa\DeacomDutiesExercise\DeacomDutiesExercise\DummyData\ToImport\.csv'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path)
+   at DeacomDutiesExercise.CoreLogic.CSVHandler`1.ReadCsvFile(String fileName) in C:\Users\User\Documents\WORK\aaa\DeacomDutiesExercise\DeacomDutiesExercise\CoreLogic\CSVHandler.cs:line 28[INFO] 2023-12-07_13:12:48 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_13:12:50 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_13:12:50 - Selected Exit program... Closing.
+[INFO] 2023-12-07_13:12:57 - ---------------------- Starting the program ----------------------
+[INFO] 2023-12-07_13:12:00 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_13:12:00 - Selected Import
+[INFO] 2023-12-07_13:12:02 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_13:12:02 - Validating input, max attempts: 5 | validValuesIsNull True
+[INFO] 2023-12-07_13:12:08 - Error ocurred when importing file: C:\Users\User\Documents\WORK\aaa\DeacomDutiesExercise\DeacomDutiesExercise\DummyData\ToImport\ded.csv
+ Execption: Could not find file 'C:\Users\User\Documents\WORK\aaa\DeacomDutiesExercise\DeacomDutiesExercise\DummyData\ToImport\ded.csv'. - System.IO.FileNotFoundException: Could not find file 'C:\Users\User\Documents\WORK\aaa\DeacomDutiesExercise\DeacomDutiesExercise\DummyData\ToImport\ded.csv'.
+File name: 'C:\Users\User\Documents\WORK\aaa\DeacomDutiesExercise\DeacomDutiesExercise\DummyData\ToImport\ded.csv'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path)
+   at DeacomDutiesExercise.CoreLogic.CSVHandler`1.ReadCsvFile(String fileName) in C:\Users\User\Documents\WORK\aaa\DeacomDutiesExercise\DeacomDutiesExercise\CoreLogic\CSVHandler.cs:line 28[INFO] 2023-12-07_13:12:15 - ---------------------- Starting the program ----------------------
+[INFO] 2023-12-07_13:12:18 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_13:12:18 - Selected Import
+[INFO] 2023-12-07_13:12:20 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_13:12:26 - Validating input, max attempts: 5 | validValuesIsNull True
+[INFO] 2023-12-07_15:12:51 - ---------------------- Starting the program ----------------------
+[INFO] 2023-12-07_15:12:54 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_15:12:54 - Selected Import
+[INFO] 2023-12-07_15:12:57 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_15:12:12 - Validating input, max attempts: 5 | validValuesIsNull True
+[INFO] 2023-12-07_15:12:12 - Successful imported!
+[INFO] 2023-12-07_15:12:22 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_15:12:36 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_15:12:47 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_15:12:47 - Selected Exit program... Closing.

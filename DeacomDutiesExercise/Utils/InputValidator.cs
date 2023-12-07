@@ -38,7 +38,7 @@ namespace DeacomDutiesExercise.Utils
             }
             else
             {
-                while (attempts < MAX_ATTEMPTS || input is null)
+                while (attempts < MAX_ATTEMPTS && string.IsNullOrEmpty(input))
                 {
                     Console.WriteLine("Please, enter a valid value.");
                     input = Console.ReadLine();
@@ -56,7 +56,10 @@ namespace DeacomDutiesExercise.Utils
 
         public static (string, string) ValidateImportPathFileName()
         {
-            string? path = _config.GetSection("FilesPaths:Import").Value;
+            Console.WriteLine("Type the file name");
+            string? fileName = Console.ReadLine();
+            ValidateInput(ref fileName);
+            string? path = _config.GetSection("FilePaths:Import").Value;
             if (path is null)
             {
                 Exception ex = new NullReferenceException("Double check import path");
@@ -64,8 +67,6 @@ namespace DeacomDutiesExercise.Utils
                 throw ex;
             }
 
-            string? fileName = Console.ReadLine();
-            ValidateInput(ref fileName);
             return (path, fileName!);
         }
     }

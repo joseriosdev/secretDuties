@@ -48,7 +48,18 @@ namespace DeacomDutiesExercise.CoreLogic
                             s.Secret
                             );
                     }
-                    bulkCopy.WriteToServer(table);
+                    try
+                    {
+                        bulkCopy.WriteToServer(table);
+                        _log.AddInfo("Successful imported!");
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("Successful imported!");
+                        Console.ResetColor();
+                    }
+                    catch (Exception ex)
+                    {
+                        _log.AddError("Error while inserting to DB", ex);
+                    }
                 }
                 connection.Close();
             }
