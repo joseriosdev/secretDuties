@@ -1,14 +1,5 @@
-﻿using DeacomDutiesExercise.DB;
-using System.Data;
-using System.Data.SqlClient;
-using DeacomDutiesExercise.Models.DTOs;
-using DeacomDutiesExercise.Utils;
-using System.Xml;
+﻿using DeacomDutiesExercise.Utils;
 using DeacomDutiesExercise.CoreLogic;
-using DeacomDutiesExercise.Models;
-using Microsoft.Extensions.Configuration;
-using DeacomDutiesExercise;
-using System.Reflection;
 
 public class Program
 {

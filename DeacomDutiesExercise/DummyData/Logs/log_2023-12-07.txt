@@ -15,3 +15,9 @@
 [INFO] 2023-12-07_10:12:56 - ---------------------- Starting the program ----------------------
 [INFO] 2023-12-07_10:12:59 - Validating input, max attempts: 5
 [INFO] 2023-12-07_10:12:08 - Selected Exit program... Closing.
+[INFO] 2023-12-07_12:12:53 - ---------------------- Starting the program ----------------------
+[INFO] 2023-12-07_12:12:30 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_12:12:30 - Selected Import
+[INFO] 2023-12-07_12:12:44 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_12:12:03 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_12:12:03 - Selected Exit program... Closing.

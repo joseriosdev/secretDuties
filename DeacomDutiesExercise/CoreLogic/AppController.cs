@@ -1,4 +1,5 @@
-﻿using DeacomDutiesExercise.Utils;
+﻿using DeacomDutiesExercise.Models.DTOs;
+using DeacomDutiesExercise.Utils;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -25,7 +26,7 @@ namespace DeacomDutiesExercise.CoreLogic
             Console.WriteLine("[2] Export Database to .xml");
             Console.WriteLine("[3] Exit");
             string? input = Console.ReadLine();
-            ValidateInput(ref input, validValues);
+            InputValidator.ValidateInput(ref input, validValues);
 
             switch (input)
             {
@@ -49,16 +50,34 @@ namespace DeacomDutiesExercise.CoreLogic
             Console.WriteLine("[2] Secondary");
             Console.WriteLine("[3] Show example");
             string? input = Console.ReadLine();
-            ValidateInput(ref input, validValues);
+            InputValidator.ValidateInput(ref input, validValues);
 
             switch(input)
             {
-                case "1":
-                    break;
-                case "2": break;
+                case "1": ImportPrimary();  break;
+                case "2": ImportSecondary(); break;
                 case "3": PrintSample(); break;
             }
 
+            void ImportPrimary()
+            {
+                var (path, fileName) = InputValidator.ValidateImportPathFileName();
+                var csvCtrl = new CSVHandler<PrimarySecretDTO>(path);
+                var importer = new PrimarySecretImporter();
+                var dtoArr = csvCtrl.ReadCsvFile(fileName);
+                var entityArr = importer.MapSecretsToDBEntity(dtoArr);
+                importer.BulkInsertSecrets(entityArr);
+            }
+
+            void ImportSecondary()
+            {
+                var (path, fileName) = InputValidator.ValidateImportPathFileName();
+                var csvCtrl = new CSVHandler<SecondarySecretDTO>(path);
+                var importer = new SecondarySecretImporter();
+                var dtoArr = csvCtrl.ReadCsvFile(fileName);
+                var entityArr = importer.MapSecretsToDBEntity(dtoArr);
+                importer.BulkInsertSecrets(entityArr);
+            }
 
             void PrintSample()
             {
@@ -87,48 +106,5 @@ namespace DeacomDutiesExercise.CoreLogic
                 Console.ResetColor();
             }
         }
-
-        private static void ValidateInput(ref string? input, string[]? validValues = null)
-        {
-            const int MAX_ATTEMPTS = 5;
-            int attempts = 0;
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
-            _log.AddInfo($"Validating input, max attempts: {MAX_ATTEMPTS} | validValuesIsNull {validValues is null}");
-
-            if(validValues is not null)
-            {
-                string validValuesStr = string.Join(", ", validValues);
-
-                while (attempts < MAX_ATTEMPTS && !validValues.Contains(input) || input is null)
-                {
-                    Console.WriteLine($"Please, enter a valid value:\n[{validValuesStr}]");
-                    input = Console.ReadLine();
-                    attempts++;
-
-                    if (attempts == MAX_ATTEMPTS-1)
-                    {
-                        _log.AddInfo("There is one attempt left for a valid input");
-                        Console.WriteLine("You got one more chance to put a right value");
-                    }
-                }
-            }
-            else
-            {
-                while(attempts < MAX_ATTEMPTS || input is null)
-                {
-                    Console.WriteLine("Please, enter a valid value.");
-                    input = Console.ReadLine();
-                    attempts++;
-
-                    if (attempts == MAX_ATTEMPTS - 1)
-                    {
-                        _log.AddInfo("There is one attempt left for a valid input");
-                        Console.WriteLine("You got one more chance to put a right value");
-                    }
-                }
-            }
-            Console.ResetColor();
-        }
     }
-
 }

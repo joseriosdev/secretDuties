@@ -16,7 +16,6 @@
   <ItemGroup>
     <Folder Include="DummyData\Exported\" />
     <Folder Include="DummyData\Logs\" />
-    <Folder Include="DummyData\ToImport\" />
   </ItemGroup>
 
 </Project>
