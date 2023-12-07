@@ -1,0 +1,66 @@
+<information>
+  <secret id="abccia">
+    <longest_substring>3</longest_substring>
+    <duplicates_count>2</duplicates_count>
+    <almost_palindrome>True</almost_palindrome>
+    <encrypted>1 2 3 3 9 1</encrypted>
+    <names>
+      <name id="TheAbc">
+        <time>02:42:29</time>
+        <calculated_m35>9168</calculated_m35>
+      </name>
+    </names>
+  </secret>
+  <secret id="awesome">
+    <longest_substring>6</longest_substring>
+    <duplicates_count>1</duplicates_count>
+    <almost_palindrome>False</almost_palindrome>
+    <encrypted>1 23 5 19 15 13 5</encrypted>
+    <names>
+      <name id="TheAbcdz">
+        <time>00:01:37</time>
+        <calculated_m35>9168</calculated_m35>
+      </name>
+    </names>
+  </secret>
+  <secret id="bog">
+    <longest_substring>3</longest_substring>
+    <duplicates_count>0</duplicates_count>
+    <almost_palindrome>True</almost_palindrome>
+    <encrypted>2 15 7</encrypted>
+    <names>
+      <name id="theBog1">
+        <time>00:10:02</time>
+        <calculated_m35>23</calculated_m35>
+      </name>
+      <name id="theBog2">
+        <time>00:20:00</time>
+        <calculated_m35>9168</calculated_m35>
+      </name>
+      <name id="theBog3">
+        <time>03:20:11</time>
+        <calculated_m35>23</calculated_m35>
+      </name>
+    </names>
+  </secret>
+  <secret id="indivisibility">
+    <longest_substring>4</longest_substring>
+    <duplicates_count>1</duplicates_count>
+    <almost_palindrome>False</almost_palindrome>
+    <encrypted>9 14 4 9 22 9 19 9 2 9 12 9 20 25</encrypted>
+    <names>
+      <name id="theIndivisibility1">
+        <time>00:01:00</time>
+        <calculated_m35>23</calculated_m35>
+      </name>
+      <name id="theIndivisibility2">
+        <time>00:20:00</time>
+        <calculated_m35>9168</calculated_m35>
+      </name>
+      <name id="theIndivisibility3">
+        <time>00:02:00</time>
+        <calculated_m35>23</calculated_m35>
+      </name>
+    </names>
+  </secret>
+</information>

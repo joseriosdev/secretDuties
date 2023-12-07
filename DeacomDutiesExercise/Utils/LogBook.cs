@@ -30,7 +30,7 @@ namespace DeacomDutiesExercise.Utils
             CreateDirectory();
             string name = GetNameFile();
             string str =
-                $"[INFO] {DateTime.Now.ToString("yyyy-MM-dd_HH:MM:ss")} - {message}" +
+                $"[ERROR] {DateTime.Now.ToString("yyyy-MM-dd_HH:MM:ss")} - {message}" +
                 $"{Environment.NewLine} Execption: {ex.Message} - {ex}";
 
             StreamWriter sw = new StreamWriter($"{_path}/{name}", true);

@@ -106,3 +106,7 @@ File name: 'C:\Users\User\Documents\WORK\aaa\DeacomDutiesExercise\DeacomDutiesEx
 [INFO] 2023-12-07_15:12:36 - Validating input, max attempts: 5 | validValuesIsNull False
 [INFO] 2023-12-07_15:12:47 - Validating input, max attempts: 5 | validValuesIsNull False
 [INFO] 2023-12-07_15:12:47 - Selected Exit program... Closing.
+[INFO] 2023-12-07_17:12:24 - ---------------------- Starting the program ----------------------
+[INFO] 2023-12-07_17:12:52 - Validating input, max attempts: 5 | validValuesIsNull False
+[INFO] 2023-12-07_17:12:29 - Selected Export
+[INFO] 2023-12-07_17:12:29 - Creating new XML document
