@@ -1,0 +1,17 @@
+[INFO] 2023-12-07_01:12:24 - Starting program
+[INFO] 2023-12-07_09:12:08 - Starting the program
+[INFO] 2023-12-07_09:12:39 - Validating input, max attempts: 5
+[INFO] 2023-12-07_09:12:05 - There is one attempt left for a valid input
+[INFO] 2023-12-07_09:12:18 - Selected Exit program... Closing.
+[INFO] 2023-12-07_09:12:11 - ---------------------- Starting the program ----------------------
+[INFO] 2023-12-07_09:12:17 - Validating input, max attempts: 5
+[INFO] 2023-12-07_09:12:33 - Selected Exit program... Closing.
+[INFO] 2023-12-07_09:12:35 - ---------------------- Starting the program ----------------------
+[INFO] 2023-12-07_09:12:38 - Validating input, max attempts: 5
+[INFO] 2023-12-07_09:12:41 - Selected Export
+[INFO] 2023-12-07_09:12:42 - Creating new XML document
+[INFO] 2023-12-07_09:12:03 - Validating input, max attempts: 5
+[INFO] 2023-12-07_09:12:03 - Selected Exit program... Closing.
+[INFO] 2023-12-07_10:12:56 - ---------------------- Starting the program ----------------------
+[INFO] 2023-12-07_10:12:59 - Validating input, max attempts: 5
+[INFO] 2023-12-07_10:12:08 - Selected Exit program... Closing.
